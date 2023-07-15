@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Georgia', sans-serif;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: 60px 0;
+  background: #fff;
+  color: #333;
+}
+
+h2:after {
+  content: "";
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-bottom: 3px solid #2193b0;
+}
+
+img {
+  width: 100%;
+}
+
+/********* HEADER *********/
+
+nav {
+  display: flex;
+  width: 100%;
+  background: #2193b0;  /* fallback for old browsers */
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 4rem;
+  width: 100%;
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 1.3rem;
+  color: #fff;
+  list-style: none;
+  border-top: 2px solid transparent;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #fff;
+  transition: all .2s;
+}
+
+.fas {
+  width: 100%;
+  margin: 20px 40px 10px 0;
+  display: none;
+  text-align: right;
+}
+
+/********* WELCOME PAGE *********/
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #2193b0;  /* fallback for old browsers */
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+
+#welcome-section p {
+  font-size: 1.5rem;
+}
+
+/********* PROJECTS *********/
+.grid {
+  display: grid;
+  align-items: center;
+  grid-row-gap: 20px;
+  grid-column-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 90px 20px;
+}
+
+.grid img {
+  border-radius: 5px;
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: all .3s;
+}
+
+/********* CONTACT *********/
+.fab {
+  margin: 30px 20px 0 0;
+  color: #333;
+}
+
+.fab:hover {
+  color: #2193b0;
+  transform: scale(1.04);
+  transition: all .2s
+}
+
+.fa-github {
+  padding-right: 50px;
+}
+
+/********* FOOTER *********/
+footer {
+  margin-top: 50px;
+  background: #2193b0;  /* fallback for old browsers */
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: #333;
+  padding: 15px;
+}
+
+/********* QUERIES *********/
+@media screen and (max-width: 275px) {
+  .fa-github {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  nav ul {
+    display: none;
+  }
+
+  .fas {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+  <link rel="stylesheet" href="css/admin_table_style.css">
+  <link rel="stylesheet" href="NavFichTableau.css">
+  <link rel="stylesheet" href="tableau.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+<nav>
+  <i class="fas fa-bars"></i>
+  <ul>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Carear</a></li>
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="contentExtremeDroite">
+    <div class="extremeDroite"><a href="#">Sign out&nbsp;&nbsp;<i class="fas fa-sign-out-alt"></i></a></div>
+  </div>
+</nav>
+<div class="content">
+  <div class="contentbutton">
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+  </div>
+  <div style="overflow-x:auto;">
+    <table>
+      <tr class="entete">
+        <td>Name</td><td>Email</td><td>User Type</td>
+      </tr>
+      <tr  class="row" th:each="userList:${userList}">
+        <td th:text="${userList.name}"></td><td th:text="${userList.email}"></td><td th:text="${userList.userType}"></td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+</body>
+</html>

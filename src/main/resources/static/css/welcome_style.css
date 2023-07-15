@@ -1,0 +1,117 @@
+:root {
+  --orange: #fab639;
+}
+
+body{
+  margin: 0px;
+  font-family: arial;
+  box-sizing: border-box;
+}
+
+.fas, span {
+  color: var(--orange);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 0px;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+#navbar {
+  background: linear-gradient(rgba(25,25,25,1),rgba(50,50,50,1),rgba(25,25,25,1));
+  position: sticky;
+  top: 0;
+}
+
+#navbar .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#navbar .logo {
+  color: white;
+  margin-left: 20px;
+}
+
+#navbar .container ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar .container ul li {
+  list-style: none;
+}
+
+#navbar .container ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 20px;
+  margin: 0px 5px;
+  border-radius: 5px;
+}
+
+.active,
+#navbar .container ul li a:hover {
+  background-color: var(--orange);
+  color: #000 !important;
+}
+
+@media (max-width: 650px) {
+  #navbar {
+    height: 150px;
+  }
+  #navbar .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #navbar ul li a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  #navbar {
+    height: 270px;
+  }
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar ul li {
+    margin-bottom: 20px !important;
+    align-self: center;
+  }
+  #navbar ul li a {
+    padding: 10px 15px !important;
+  }
+}
+
+#header {
+  background:
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,.2)),
+    url("https://images.unsplash.com/photo-1444723121867-7a241cacace9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center center/cover;
+
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-content {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(50,50,50,0.8);
+  padding: 20px;
+  border-radius: 10px;
+}

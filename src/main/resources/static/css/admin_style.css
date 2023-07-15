@@ -1,0 +1,75 @@
+body{
+  margin:0;
+  padding:0;
+  background-color:#adadad;
+  height:100vh;
+  box-sizing:border-box;
+}
+.main{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:300px;
+  background-color:white;
+  border-radius:10px;
+}
+h2{
+  text-align:center;
+  margin-top:20px;
+  font-size:30px;
+}
+.text-feild input{
+  border:none;
+  outline:none;
+  padding:10px;
+  margin:5px;
+  width:70%;
+  height:30px;
+  border-radius:5px;
+}
+.text-feild label{
+  marign:5px;
+  padding:10px;
+  font-size:20px;
+}
+
+.passs{
+  height:20px;
+  margin:10px;
+  color:#adadad;
+  font-size:15px;
+  cursor:pointer;
+}
+.passs:hover{
+  text-decoration:underline;
+  cursor:pointer;
+}
+input[type="submit"]{
+  width:100%;
+  padding:10px;
+  border-radius:13px;
+
+}
+input[type="submit"]:hover{
+  background-color:grey;
+  transition:0.5s;
+}
+.input-link{
+  margin:20px;
+  text-align:center;
+  font-size:17px;
+  padding:10px;
+  color:black;
+}
+.input-link a{
+  color:#adadad;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:underline;
+}
+input:hover{
+  background-color:#adadad;
+  transition:0.5s ease-in-out;
+}

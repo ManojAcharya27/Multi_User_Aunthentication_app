@@ -1,0 +1,186 @@
+body{
+	margin:0;
+	padding:0px;
+	background-color:#f2f3f5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*********************Nav**********************/
+
+
+.content{
+	display:flex;
+}
+
+nav{
+  	border-bottom:4px solid #ccc;
+	color:#fff;
+    position:relative;
+}
+ul{
+	margin:0;
+	background-color:#505763;
+	list-style:none;
+	display:flex;
+	justify-content:center;
+
+}
+li, .extremeDroite{
+	padding:20px;
+}
+
+li a{
+	color:#fff;
+	text-decoration:none;
+}
+li:hover{
+	background-color:#f1c40f;
+}
+
+nav > .fas{
+	position:absolute;
+	left:20px;
+	z-index:1;
+	color:#fff;
+	padding-top:20px;
+}
+
+.contentExtremeDroite{
+	position:absolute;
+	right:20px;
+	top:0;
+}
+
+.extremeDroite a{
+	color:#fff;
+	text-decoration:none;
+}
+
+
+
+/*******************table Page*****************/
+table{
+	border:1px solid #ccc;
+	border-collapse:collapse;
+	width:100%
+}
+
+table td{
+	border:1px solid #ccc;
+	padding:15px;
+}
+
+.entete{
+	background-color:#CB3636;
+	color:#fff;
+}
+
+.row:hover{
+	background-color:#ccc;
+}
+
+.row td:hover{
+    background-color:#aaa;
+}
+
+button[type="submit"], input[type="text"]{
+	background-color:transparent;
+	border:1px solid #ccc;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:40px;
+	padding-right:40px;
+	border-radius:3px;
+}
+
+.contentbutton  button[type="submit"]{
+	font-size:15px;
+	color:#777;
+}
+
+.contentbutton  input[type="text"]{
+	padding-left:10px;
+	padding-right:5px;
+}
+
+button[type="submit"]:hover{
+	background-color:#f1c40f;
+	border:1px solid #f1c40f;
+	color:#fff;
+}
+
+.contentbutton  input[type="text"]:focus, .contentbutton  input[type="text"]:hover{
+	border:1px solid #ccc;
+    width: 400px;
+}
+
+.contentbutton{
+	display:flex;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+.content{
+	width:80%;
+	margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+	padding:0;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+}
+
+.rightinput{
+	position:absolute;
+	right:0;
+}
+
+.delete{
+	margin-left:10px;
+}
+
+@media all and (max-width: 1024px)
+{
+    nav
+    {
+        width: auto;
+        text-align: left;
+
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left:20px;
+    }
+
+    nav a
+    {
+        font-size: 1.1em;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+
+  .contentbutton{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .content{
+	width:100%;
+  }
+
+  .rightinput{
+    position:absolute;
+    left:40%;
+  }
+}

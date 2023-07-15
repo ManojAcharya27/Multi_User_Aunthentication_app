@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="css/welcome_style.css">
+</head>
+<body>
+  <nav id="navbar">
+      <div class="container">
+          <h1 class="logo"><i class="fas fa-building"></i> <span>B</span>anao</h1>
+          <ul>
+              <li class="nav-items"><a href="#" class="active" id="home">Home</a></li>
+              <li class="nav-items"><a href="#">Work</a></li>
+              <li class="nav-items"><a href="#">Gallery</a></li>
+              <li class="nav-items"><a href="#">Blog</a></li>
+              <li class="nav-items"><a href="#">Logout</a></li>
+          </ul>
+      </div>
+  </nav>
+  <header id="header">
+      <div id="header-content">
+          <h1 id="h1-welcome"><span>Welcome</span>  <span th:text="${userName}"></span> to our site</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est illum magni quaerat! Reprehenderit possimus, nihil dolore eos nulla recusandae inventore.</p>
+      </div>
+  </header>
+</body>
+</html>

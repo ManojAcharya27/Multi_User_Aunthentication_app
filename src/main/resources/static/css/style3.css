@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container {
+  position: relative;
+  background: linear-gradient(to right, #243B55, #141E30);
+  height: 100%;
+}
+.confirmation-modal {
+  max-width: 98%;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  background: #fafafa;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: perspective(1px) translateY(-50%);
+  margin: 0 auto;
+}
+
+#confirmation-form {
+  margin: 40px auto 20px;
+}
+
+#confirmation-form input[type="number"] {
+    display: block;
+    width: 50%;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s ease-in-out;
+    outline: none;
+    margin: 10px auto 0 auto;
+}
+
+#confirmation-form input[type="submit"] {
+    width: 90%;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 28px;
+    background: #F54342;
+    color: #fafafa;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}

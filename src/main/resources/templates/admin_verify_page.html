@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Verify Email</title>
+
+</head>
+<body>
+<div class="form" >
+    <form method="post" action="/activating_Admin" th:object="${otpRequest}">
+        <h2>Submit your otp</h2>
+
+        <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="otp" placeholder="Otp" required>
+        </div>
+        <div class="button">
+            <a href="activating_User"><button>Submit</button></a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
